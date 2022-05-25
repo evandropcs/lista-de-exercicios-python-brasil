@@ -30,6 +30,7 @@ Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, consid
 
 def calcular_latas_e_preco_de_tinta():
     """Escreva aqui em baixo a sua solução"""
+<<<<<<< HEAD
 
     # Entrada da area, calculo da folga, calculo de quantos litros de tinta são necessarios
 
@@ -61,3 +62,10 @@ def calcular_latas_e_preco_de_tinta():
     print(f'Você pode comprar {latas} lata(s) de 18 litros a um custo de R$ {custo_lata}. Vão sobrar {sobra_tinta_latas:.1f} litro(s) de tinta.')
     print(f'Você pode comprar {galoes} lata(s) de 3.6 litros a um custo de R$ {custo_galao}. Vão sobrar {sobra_tinta_galoes:.1f} litro(s) de tinta.')
     print(f'Para menor custo, você pode comprar {latas_vantagem:.0f} lata(s) de 18 litros e {galoes_vantagem} galão(ões) de 3.6 litros a um custo de R$ {custo_vantagem:.0f}. Vão sobrar {sobra_vantagem} litro(s) de tinta.')
+=======
+    area = float(input('Area'))
+    latas = round((area / 108) + 0.5)
+    custo_lata= latas * 80
+
+    print(f'Você deve comprar {latas:.0f} lata(s) tinta ao custo de R$ {custo_total:.2f}')
+>>>>>>> 68ddcd42354d0cbb53b6683fd3fbcb9b22d218b5
