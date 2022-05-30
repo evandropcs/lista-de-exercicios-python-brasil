@@ -11,14 +11,8 @@ Faça um Programa que peça um número e então mostre a mensagem O número info
 
 """
 
-def qq(n):
-    return n+1
-
 def escreva_um_numero():
     """Escreva aqui em baixo a sua solução"""
     numero=input('Digite um número: ')
     print(f'O número informado foi {numero}')
 
-if__name__ == '__main__:
-print('Passou pelo __main__')
-    escreva_um_numero()
