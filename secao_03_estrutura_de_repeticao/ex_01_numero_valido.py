@@ -45,8 +45,6 @@ def obter_numero_valido():
     # TESTE 1
     # while n not in range(0, 11):
 
-    # TESTE 2
-
     while n < 0 and n > 10:
 
         print(f'Número inválido: {n}')
