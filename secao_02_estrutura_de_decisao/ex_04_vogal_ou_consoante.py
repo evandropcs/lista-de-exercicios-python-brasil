@@ -21,6 +21,7 @@ def vogal_ou_consoante(letra):
     l = letra.lower()
 
     # if l == 'a' or l == 'e' or l == 'i' or l == 'o' or l == 'u':
+
     if l in ['a', 'e', 'i', 'o', 'u']:
         print("'vogal'")
     else:

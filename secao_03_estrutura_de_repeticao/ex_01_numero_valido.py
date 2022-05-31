@@ -35,11 +35,22 @@ até que o usuário informe um valor válido.
 def obter_numero_valido():
     """Escreva aqui em baixo a sua solução"""
 
-    n = input('Escolha um número entre 0 e 10: ')
+    n = int(input('Escolha um número entre 0 e 10: '))
 
-    while n not in range(0, 11):
+    # n = input('Escolha um número entre 0 e 10: ')
+
+    # SOLUCAO DO BRENO ADAPTADA
+    # while n.isnumeric() == False or len(n) > 1 and n != '10':
+
+    # TESTE 1
+    # while n not in range(0, 11):
+
+    # TESTE 2
+
+    while n < 0 and n > 10:
+
         print(f'Número inválido: {n}')
-        n = input('Escolha um número entre 0 e 10: ')
+        n = int(input('Escolha um número entre 0 e 10: '))
     print(n)
 
 
