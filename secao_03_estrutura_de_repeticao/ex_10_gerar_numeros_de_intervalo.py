@@ -16,3 +16,8 @@ Faça um programa que receba dois números inteiros e gere os números inteiros 
 
 def calcular_numeros_no_intervalo(inicio: int, fim: int) -> str:
     """Escreva aqui em baixo a sua solução"""
+    numeros = str(list(range(inicio, fim)))
+    numeros = numeros[1: -1]
+    print(f"'{numeros}'")
+
+

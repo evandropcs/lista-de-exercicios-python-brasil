@@ -92,3 +92,4 @@ def calcular_salario_liquido(valor_hora: float, horas_trabalhadas: int):
 
 
 
+

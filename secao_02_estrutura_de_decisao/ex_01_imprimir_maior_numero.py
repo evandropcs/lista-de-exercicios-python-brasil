@@ -18,15 +18,8 @@ Faça um Programa que peça dois números e imprima o maior deles.
 def maior_de_dois_numeros(x, y):
     """Escreva aqui em baixo a sua solução"""
 
-    # n1 = int(input('Numero 1'))
-    # n2 = int(input('Numero 2'))
 
-    # n1=int([0])
-    # n2=int([1])
-
-    n1 = x
-    n2 = y
-    if n1 > n2:
-        print(n1)
+    if x > y:
+        print(x)
     else:
-        print(n2)
+        print(y)
