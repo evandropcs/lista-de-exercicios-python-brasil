@@ -129,7 +129,7 @@ def gerar_tabuada(n: int) -> str:
     x = 1
 
     if n < 1 or n > 10:
-        print("Somente pode ser gerada taboada de 1 a 10")
+        print("Somente pode ser gerada tabuada de 1 a 10")
     else:
         while x < 11:
             total = n * x
