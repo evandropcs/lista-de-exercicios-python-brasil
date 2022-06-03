@@ -43,7 +43,7 @@ def escrever_numeros_de_1_a_20(formato:str) -> str:
         if formato != 'um_abaixo_do_outro':
             for i in numeros:
                 if i == numeros[-1]:
-                    print(f'{i}')
+                    print(f'{i:.8.2f}')
                 else:
                     print(f'{i}', end=" ")
 

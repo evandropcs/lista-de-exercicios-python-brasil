@@ -30,8 +30,6 @@ Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, consid
 
 def calcular_latas_e_preco_de_tinta():
     """Escreva aqui em baixo a sua solução"""
-    import math
-
 
     # Entrada da area, calculo da folga, calculo de quantos litros de tinta são necessarios
 
