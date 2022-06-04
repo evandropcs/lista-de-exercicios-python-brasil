@@ -33,3 +33,15 @@ Limite o cáculo para valores inteiros, positivos, maiores ou iguais a 16.
 
 def calcular_fatorial(n: int) -> int:
     """Escreva aqui em baixo a sua solução"""
+
+    if type(n) != int or n < 1 or n > 16:
+        print(f"'Apenas valores positivos, inteiros e menores que 16 são válidos. Não é possível calcular para {n}'")
+    else:
+        total = 1
+        x = 1
+
+        while x <= n:
+            total = total * x
+            x += 1
+
+        print(total)
