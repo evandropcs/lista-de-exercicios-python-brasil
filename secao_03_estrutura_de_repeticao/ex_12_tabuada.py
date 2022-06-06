@@ -133,6 +133,6 @@ def gerar_tabuada(n: int) -> str:
     else:
         while x < 11:
             total = n * x
-            print(f"{n} X  {x} = {total}")
+            print(f"{n} X {x} = {total}")
             x += 1
 
