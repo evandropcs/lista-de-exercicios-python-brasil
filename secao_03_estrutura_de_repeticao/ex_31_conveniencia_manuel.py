@@ -57,12 +57,13 @@ para registrar a próxima compra.
 def rodar_programa_de_caixa():
     """Escreva aqui em baixo a sua solução"""
     entradas = int(input('adwadwa'))
+    lista = []
     dinheiro = list()
 
-    for precos in range(sorted(entradas)):
-        # if precos != 0 or precos == -1:
-            entradas.append(precos)
-            print(entradas)
+    for precos in range(entradas):
+        if precos != 0 or precos == -1:
+            lista.append(precos)
+            print(lista)
         # else:
         #     dinheiro.append(precos)
         #     total = sum(entradas)
