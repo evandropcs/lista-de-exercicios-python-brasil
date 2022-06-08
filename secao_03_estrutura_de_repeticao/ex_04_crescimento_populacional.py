@@ -25,7 +25,7 @@ def calcular_ano_ultrapassagem_populacional() -> str:
 
 
     while pop_a < pop_b:
-        pop_a = pop_a * (1+ taxa_a)
+        pop_a = pop_a * (1 + taxa_a)
         pop_b = pop_b * (1 + taxa_b)
         ano += 1
 

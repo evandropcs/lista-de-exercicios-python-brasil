@@ -56,3 +56,19 @@ para registrar a próxima compra.
 
 def rodar_programa_de_caixa():
     """Escreva aqui em baixo a sua solução"""
+    entradas = int(input('adwadwa'))
+    dinheiro = list()
+
+    for precos in range(sorted(entradas)):
+        # if precos != 0 or precos == -1:
+            entradas.append(precos)
+            print(entradas)
+        # else:
+        #     dinheiro.append(precos)
+        #     total = sum(entradas)
+        #     print('Lojas Tabajara')
+        #     print(f'Total     : R$   {total:.2f}')
+        #     print(f'Dinheiro  : R$  {dinheiro:.2f}')
+        #     print(f'Troco: R$   {total - dinheiro:.2f}')
+        #     print('-------------------')
+        #     print('Programa encerrado!')

@@ -40,23 +40,41 @@ divisível somente por ele mesmo e por 1.
 def eh_primo(n: int) -> bool:
     """Escreva aqui em baixo a sua solução"""
 
-    x = 1
-    lista = []
-
     if n < 2:
-        print("False")
+        return False
+    elif n == 2:
+        return True
     else:
-        while x <= n:
-            if n % x == 0 and x != 1 and x != n:
+        lista = []
+        for x in range(2, n+1):
+            if n % x == 0:
                 lista.append(x)
-                x += 1
-            else:
-                x += 1
-
-        if len(lista) == 0:
-            print("True")
+        if len(lista) == 1:
+            return True
         else:
-            print("False")
+            return False
+
+
+
+
+
+    # x = 1
+    # lista = []
+    #
+    # if n < 2:
+    #     print("False")
+    # else:
+    #     while x <= n:
+    #         if n % x == 0 and x != 1 and x != n:
+    #             lista.append(x)
+    #             x += 1
+    #         else:
+    #             x += 1
+    #
+    #     if len(lista) == 0:
+    #         print("True")
+    #     else:
+    #         print("False")
 
     # resultado = 0
     # x = 1
