@@ -56,20 +56,54 @@ para registrar a próxima compra.
 
 def rodar_programa_de_caixa():
     """Escreva aqui em baixo a sua solução"""
-    entradas = int(input('adwadwa'))
-    lista = []
-    dinheiro = list()
+    compras = []
+    total = 0
+    dinheiro = 0
+    troco = 0
 
-    for precos in range(entradas):
-        if precos != 0 or precos == -1:
-            lista.append(precos)
-            print(lista)
-        # else:
-        #     dinheiro.append(precos)
-        #     total = sum(entradas)
-        #     print('Lojas Tabajara')
-        #     print(f'Total     : R$   {total:.2f}')
-        #     print(f'Dinheiro  : R$  {dinheiro:.2f}')
-        #     print(f'Troco: R$   {total - dinheiro:.2f}')
-        #     print('-------------------')
-        #     print('Programa encerrado!')
+
+
+    while True:
+        entrada = float(input("Dados: "))
+
+        if entrada == -1 and len(compras) == 0:
+            print('Lojas Tabajara')
+            print('-------------------')
+            break
+
+        if entrada > 0:
+            compras.append(entrada)
+            total = sum(compras)
+
+        elif entrada == 0:
+            if total > 0:
+                dinheiro = float(input("Pagamento: "))
+                troco = dinheiro - total
+                print('Lojas Tabajara')
+                print(f'Total     : R$   {total:.2f}')
+                print(f'Dinheiro  : R${dinheiro:7.2f}')
+                print(f'Troco     : R$   {troco:.2f}')
+                print('-------------------')
+                compras =[]
+                total = 0
+
+        elif entrada == -1:
+            if total > 0:
+                dinheiro = float(input("Pagamento: "))
+                troco = dinheiro - total
+                print('Lojas Tabajara')
+                print(f'Total     : R$   {total:.2f}')
+                print(f'Dinheiro  : R${dinheiro:7.2f}')
+                print(f'Troco     : R$   {troco:.2f}')
+                print('-------------------')
+            break
+    print('Programa encerrado!')
+
+
+
+
+
+
+
+
+

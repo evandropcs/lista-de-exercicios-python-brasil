@@ -37,6 +37,3 @@ Mostre na tela:
 
 def lancar_dados(*valor_lancamentos):
     """Escreva aqui em baixo a sua solução"""
-        list(range [1: 1: -1])
-        print(list)
-    print({list})
