@@ -39,7 +39,7 @@ def obter_numero_valido():
 
     while n.isnumeric() == False or n not in str(range(0, 10)):
         print(f'Número inválido: {n}')
-        n = input('Escolha um número entre 0 e 10: ')
+        n = input('Escolha um número entre 0 e 10:  ')
     print(n)
 
 
