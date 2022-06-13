@@ -91,6 +91,23 @@ from collections import Counter
 def apurar_votos(*votos):
     """Escreva aqui em baixo a sua solução"""
 
-    candidatos = {"Bolstonaro": 1, "Luladrão": 2, "Dilmanta": 3, "FHC": 4, "Nulos": 5, "Brancos": 6}
-    print(candidatos[2])
+    votacao = Counter(votos)
+    # Counter({'1': 1})
+    print(votacao)
+    total_de_votos = len(votos)
 
+    candidatos = {'1': "Bolstonaro", '2': "Luladrão", '3': "Dilmanta", '4': "FHC", '5': "Nulos", '6': "Brancos"}
+
+    for numero, nome in candidatos.items():
+        escolha = votacao[numero]
+        if escolha == '1'
+        percentual = (escolha/total_de_votos) * 100
+
+
+        print(f'1                   Bostonaro         {escolha}     {percentual}%')
+        print(f'2                   Luladrão          {escolha}     {percentual}%')
+        print(f'3                   Dilmanta          {escolha}     {percentual}%')
+        print(f'4                   FHC Isentão       {escolha}     {percentual}%')
+        print('-'*66)
+        print(f'5                   Votos Nulos       {escolha}     {percentual}%')
+        print(f'6                   Votos Brancos     {escolha}     {percentual}%')
