@@ -1,11 +1,9 @@
 """
 Exercício 27 da seção de estrutura sequencial da Python Brasil:
 https://wiki.python.org.br/EstruturaDeRepeticao
-
 Faça um programa que calcule o número médio de alunos por turma. Para isto, peça a quantidade de turmas e a quantidade
 de alunos para cada turma. As turmas não podem ter mais de 40 alunos e devem ter ao menos um aluno.
 Arredonde o valor da média para baixo.
-
     >>> from secao_03_estrutura_de_repeticao import ex_27_alunos_por_turma
     >>> entradas = ['1', '1']
     >>> ex_27_alunos_por_turma.input = lambda k: entradas.pop()
@@ -30,7 +28,6 @@ Arredonde o valor da média para baixo.
     Uma turma deve ter de 1 a 40 alunos, não é possível ter 41 alunos
     Uma turma deve ter de 1 a 40 alunos, não é possível ter 0 alunos
     Média de alunos por turma: 20
-
 """
 
 
@@ -53,8 +50,3 @@ def calcular_media_de_alunos_por_turma():
     media = int(qtd_alunos / turma)
 
     print(f'Média de alunos por turma: {media}')
-
-
-
-
-

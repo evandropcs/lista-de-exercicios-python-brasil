@@ -3,7 +3,8 @@ Exercício 12 da seção de listas da Python Brasil:
 https://wiki.python.org.br/ExerciciosListas
 
 Foram anotados os nomes, as idades e alturas de de vários alunos.
-Faça um Programa que determine quantos alunos com mais de 13 anos possuem altura inferior à média de altura desses
+Faça um Programa que determine quantos alunos com mais de 13 anos possuem altura inferior
+à média de altura desses
 alunos.
 
 Mostre a média com uma casa decimal.

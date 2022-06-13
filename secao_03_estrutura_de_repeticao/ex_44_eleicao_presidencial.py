@@ -90,3 +90,7 @@ from collections import Counter
 
 def apurar_votos(*votos):
     """Escreva aqui em baixo a sua solução"""
+
+    candidatos = {"Bolstonaro": 1, "Luladrão": 2, "Dilmanta": 3, "FHC": 4, "Nulos": 5, "Brancos": 6}
+    print(candidatos[2])
+
