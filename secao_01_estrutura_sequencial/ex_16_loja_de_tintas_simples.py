@@ -26,6 +26,6 @@ def calcular_latas_e_preco_de_tinta():
     area = float(input('Area'))
     # latas = round((area / 54) + 0.5)
     latas = math.ceil((area / 54))
-    custo_total= latas * 80
+    custo_total = latas * 80
 
     print(f'Você deve comprar {latas:.0f} lata(s) tinta ao custo de R$ {custo_total:.2f}')

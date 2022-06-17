@@ -21,4 +21,5 @@ def ordenar_decrescente(x, y, z):
 
     lista = (x, y, z)
     lista_ordenada = sorted(lista, reverse=True)
+
     print(*lista_ordenada, sep=', ')

@@ -56,12 +56,11 @@ para registrar a próxima compra.
 
 def rodar_programa_de_caixa():
     """Escreva aqui em baixo a sua solução"""
+
     compras = []
     total = 0
     dinheiro = 0
     troco = 0
-
-
 
     while True:
         entrada = float(input("Dados: "))
@@ -97,6 +96,7 @@ def rodar_programa_de_caixa():
                 print(f'Troco     : R$   {troco:.2f}')
                 print('-------------------')
             break
+
     print('Programa encerrado!')
 
 

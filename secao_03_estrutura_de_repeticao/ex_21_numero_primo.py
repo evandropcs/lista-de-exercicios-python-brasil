@@ -57,7 +57,7 @@ def eh_primo(n: int) -> bool:
 
 
 
-
+    # Solução 1
     # x = 1
     # lista = []
     #
@@ -76,6 +76,7 @@ def eh_primo(n: int) -> bool:
     #     else:
     #         print("False")
 
+    # Solução 2
     # resultado = 0
     # x = 1
     #

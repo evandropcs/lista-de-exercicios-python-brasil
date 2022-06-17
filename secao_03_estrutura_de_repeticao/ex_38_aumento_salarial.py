@@ -30,6 +30,7 @@ Os valores devem ser exibidos com duas casas decimais
 
 def calcular_salarios_anuais(salario: float):
     """Escreva aqui em baixo a sua solução"""
+
     x = 0
     aumento = 0.015
     ano = 2019

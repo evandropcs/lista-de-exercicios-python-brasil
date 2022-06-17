@@ -44,7 +44,7 @@ from typing import Tuple
 def calcular_primos_e_divisoes(n: int) -> Tuple[str, int]:
     """Escreva aqui em baixo a sua solução"""
 
-    contdiv = 0
+    contar_divisoes = 0
     numeros = list(range(3, n + 1))
     primos = list()
     if n > 1:
@@ -56,11 +56,47 @@ def calcular_primos_e_divisoes(n: int) -> Tuple[str, int]:
                     cont += 1
             if cont == 2:
                 primos.append(num)
-                contdiv += 1
+                contar_divisoes += 1
     primos = str(primos)
     primos = primos[1:-1]
-    divisores = contdiv
+    divisores = contar_divisoes
     return (primos, divisores)
+
+
+    # Solução do Roger
+#     primos = imprime_apenas_os_primos(n)
+#     divisoes = nro_divisoes(n)
+#     return (primos, divisoes)
+#
+#
+# def imprime_apenas_os_primos(numero):
+#     primos = []
+#     for num in range(2, numero + 1):
+#         if is_prime(num):
+#             primos.append(str(num))
+#
+#     return ", ".join(primos)
+#
+#
+# def is_prime(numero):
+#     """retorna se o número é primo
+#     """
+#     prime = True
+#     for num in range(2, numero):
+#         resto_divisao = numero % num
+#         if resto_divisao == 0:
+#             prime = False
+#             break
+#     return prime
+#
+#
+# def divisoes(numero):
+#     """retorna se o número é primo"""
+#     divisoes = 0
+#     for num in range(2, numero):
+#         divisoes += 1
+#
+#     return divisoes
 
 
 

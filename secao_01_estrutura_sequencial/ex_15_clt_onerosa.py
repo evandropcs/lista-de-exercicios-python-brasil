@@ -27,6 +27,7 @@ Mostrar os resultados com duas casas decimais
 
 def calcular_assalto_no_salario():
     """Escreva aqui em baixo a sua solução"""
+
     sal_por_hr = float(input('Quanto você ganha por hora? '))
     hr_trab = float(input('Quantas foram as horas trabalhada? '))
 

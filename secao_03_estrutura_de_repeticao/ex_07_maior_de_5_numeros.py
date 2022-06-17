@@ -16,4 +16,10 @@ def calcular_maior_numero(n1: int, n2: int, n3: int, n4: int, n5: int, ) -> int:
 
     numeros = [n1, n2, n3, n4, n5]
 
-    print(max(numeros))
+    y = n1
+
+    for x in numeros[1:]:
+        if y < x:
+            y = x
+    print(y)
+

@@ -65,13 +65,15 @@ def calcular_preco_da_compra(kilos_de_morango: int, kilos_de_maca: int):
 
     if kilos_de_maca <= 5:
         preco_maca = 1.8
-    else: preco_maca = 1.5
+    else:
+        preco_maca = 1.5
 
     total_maca = preco_maca * kilos_de_maca
 
     if kilos_de_morango <= 5:
-        preco_morango= 2.5
-    else: preco_morango = 2.2
+        preco_morango = 2.5
+    else:
+        preco_morango = 2.2
 
     total_morango = preco_morango * kilos_de_morango
 

@@ -122,6 +122,7 @@ def gerar_tabela_de_precos(preco_por_pao: float):
 
     print(f'Preço do pão: R$  {preco_por_pao:.2f}')
     print('Panificadora Pão de Ontem - Tabela de preços')
+
     for qtd in range(1, 51):
         preco = qtd * preco_por_pao
         print(f'{qtd:<3}- R$ {preco:>6.2f}')

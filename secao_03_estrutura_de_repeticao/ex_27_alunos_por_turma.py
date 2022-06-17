@@ -35,6 +35,7 @@ def calcular_media_de_alunos_por_turma():
     """Escreva aqui em baixo a sua solução"""
 
     turma = int(input('Quantas turmas? '))
+
     print(f'Número de turmas: {turma}')
 
     qtd_alunos = 0

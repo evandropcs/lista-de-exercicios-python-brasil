@@ -18,17 +18,9 @@ Faça um Programa que leia três números e mostre o maior deles.
 def calcular_maior_de_3_numeros(x, y, z):
     """Escreva aqui em baixo a sua solução"""
 
-    # n1 = int(input('Numero 1'))
-    # n2 = int(input('Numero 2'))
-    # n3 = int(input('Numero 3'))
-
-    n1 = x
-    n2 = y
-    n3 = z
-
-    if n1 > n2 and n1 > n3:
-        print(n1)
-    elif n2 > n1 and n2 > n3:
-        print(n2)
+    if x > y and x > z:
+        print(x)
+    elif y > x and y > z:
+        print(y)
     else:
-        print(n3)
+        print(z)

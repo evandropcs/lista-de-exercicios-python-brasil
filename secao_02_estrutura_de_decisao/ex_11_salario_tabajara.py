@@ -42,27 +42,26 @@ Mostrar valores monetários com duas casas decimais.
 def calcular_aumento(salario: float):
     """Escreva aqui em baixo a sua solução"""
 
-    sal = salario
     aumento_5 = 0.05
     aumento_10 = 0.1
     aumento_15 = 0.15
     aumento_20 = 0.2
 
 
-    if sal <= 280:
-        sal_novo = sal + (sal * aumento_20)
-        aumento = round(((sal_novo/sal) -1) * 100)
-    elif sal > 280 and sal < 700:
-        sal_novo = sal + (sal * aumento_15)
-        aumento = round(((sal_novo / sal) - 1) * 100)
-    elif sal > 700 and sal < 1500:
-        sal_novo = sal + (sal * aumento_10)
-        aumento = round(((sal_novo / sal) - 1) * 100)
+    if salario <= 280:
+        salario_novo = salario + (salario * aumento_20)
+        aumento = round(((salario_novo/salario) -1) * 100)
+    elif salario > 280 and salario < 700:
+        salario_novo = salario + (salario * aumento_15)
+        aumento = round(((salario_novo / salario) - 1) * 100)
+    elif salario > 700 and salario < 1500:
+        salario_novo = salario + (salario * aumento_10)
+        aumento = round(((salario_novo / salario) - 1) * 100)
     else:
-        sal_novo = sal + (sal * aumento_5)
-        aumento = round(((sal_novo / sal) - 1) * 100)
+        salario_novo = salario + (salario * aumento_5)
+        aumento = round(((salario_novo / salario) - 1) * 100)
 
-    print(f'Salário atual: R$ {sal:.2f}')
+    print(f'Salário atual: R$ {salario:.2f}')
     print(f'Aumento porcentual: {aumento}%')
-    print(f'Valor do aumento: R$ {(sal_novo - sal):.2f}')
-    print(f'Novo salário: R$ {sal_novo:.2f}')
+    print(f'Valor do aumento: R$ {(salario_novo - salario):.2f}')
+    print(f'Novo salário: R$ {salario_novo:.2f}')

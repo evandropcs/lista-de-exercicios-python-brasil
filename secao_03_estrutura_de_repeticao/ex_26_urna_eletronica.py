@@ -50,6 +50,7 @@ def calcular_votos(*votos):
             rouba += 1
 
     total_votos = len(votos)
+
     print(f"Votantes: {total_votos}")
     print(f"Votos no candidato corrupto: {corrupto}")
     print(f"Votos no candidato mentiroso: {mentiroso}")

@@ -69,6 +69,7 @@ def gerar_tabela_de_precos():
     """Escreva aqui em baixo a sua solução"""
 
     print('Lojas Quase Dois - Tabela de preços')
+
     for qtd in range(1, 51):
         preco = qtd * 1.99
         print(f'{qtd:<3}- R$ {preco:>5.2f}')

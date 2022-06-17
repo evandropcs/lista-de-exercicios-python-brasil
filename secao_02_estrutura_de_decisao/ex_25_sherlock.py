@@ -35,6 +35,7 @@ def investigar(telefonou: str, estava_no_local: str, mora_perto: str, devia: str
     """Escreva aqui em baixo a sua solução"""
 
     respostas = (telefonou, estava_no_local, mora_perto, devia, trabalhou)
+
     sim = respostas.count('Sim')
 
     if sim == 2:

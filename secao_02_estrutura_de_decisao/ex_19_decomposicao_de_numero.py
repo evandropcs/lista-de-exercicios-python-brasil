@@ -54,12 +54,11 @@ def decompor_numero(numero: int):
     """Escreva aqui em baixo a sua solução"""
     n = numero
 
-    und = n % 10
-    n = (n - und) / 10
-    dez = int(n % 10)
-    cen = (int((n - dez) / 10))
+    cen, n = divmod(n, 100)
+    dez, und = divmod(n, 10)
 
-    str_und = 'unidade'; str_unds = 'unidades'; str_dez = 'dezena'; str_dezs = 'dezenas'; str_cen = 'centena'; str_cens = 'centenas'
+    str_und = 'unidade'; str_unds = 'unidades'; str_dez = 'dezena'; str_dezs = 'dezenas';
+    str_cen = 'centena'; str_cens = 'centenas'
 
     if numero >= 1000:
         print("'O número precisa ser menor que 1000'")

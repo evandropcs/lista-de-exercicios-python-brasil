@@ -21,17 +21,9 @@ Mostrar o resultado com duas casas decimais
 def decidir_melhor_produto(x, y, z):
     """Escreva aqui em baixo a sua solução"""
 
-    # p1 = float(input('Produto 1'))
-    # p2 = float(input('Produto 2'))
-    # p3 = float(input('Produto 3'))
-
-    p1 = x
-    p2 = y
-    p3 = z
-
-    if p1 < p2 and p1 < p3:
-        print(f'Melhor produto custa R$ {p1:.2f}')
-    elif p2 < p1 and p2 < p3:
-        print(f'Melhor produto custa R$ {p2:.2f}')
+    if x < y and x < z:
+        print(f'Melhor produto custa R$ {x:.2f}')
+    elif y < x and y < z:
+        print(f'Melhor produto custa R$ {y:.2f}')
     else:
-        print(f'Melhor produto custa R$ {p3:.2f}')
+        print(f'Melhor produto custa R$ {z:.2f}')
