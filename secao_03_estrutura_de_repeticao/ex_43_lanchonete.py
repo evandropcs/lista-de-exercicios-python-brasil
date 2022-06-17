@@ -109,3 +109,64 @@ comprados.
 
 def fechar_conta(*itens):
     """Escreva aqui em baixo a sua solução"""
+
+    qtd_cachorro = qtd_bauru_s = qtd_bauru_o = qtd_hamburguer = qtd_cheese = qtd_refri  = 0
+    preco_cachorro = preco_bauru_s = preco_bauru_o = preco_hamburguer = preco_cheese = preco_refri = 0
+
+    if len(itens) == 0:
+        print('_____________________________________________________________________________')
+        print('|                              RESUMO DA CONTA                              |')
+        print('|---------------------------------------------------------------------------|')
+        print('| Epecificação     | Código | Preço Unitário (R$) | Quantidade | Total (R$) |')
+        print('|---------------------------------------------------------------------------|')
+        print(f'| Total Geral:                                    |          0 |       0.00 |')
+        print('-----------------------------------------------------------------------------')
+
+    else:
+
+        print('_____________________________________________________________________________')
+        print('|                              RESUMO DA CONTA                              |')
+        print('|---------------------------------------------------------------------------|')
+        print('| Epecificação     | Código | Preço Unitário (R$) | Quantidade | Total (R$) |')
+
+        for cod, qtd in itens:
+            if cod == '100':
+                qtd_cachorro += qtd
+                preco_cachorro = 1.2
+            if cod == '101':
+                qtd_bauru_s += qtd
+                preco_bauru_s = 1.3
+            if cod == '102':
+                qtd_bauru_o += qtd
+                preco_bauru_o = 1.5
+            if cod == '103':
+                qtd_hamburguer += qtd
+                preco_hamburguer = 1.2
+
+            if cod == '104':
+                qtd_cheese += qtd
+                preco_cheese = 1.3
+
+            if cod == '105':
+                qtd_refri += qtd
+                preco_refri = 1
+
+        total_qtd = qtd_cachorro + qtd_bauru_s + qtd_bauru_o + qtd_hamburguer + qtd_cheese + qtd_refri
+        total_preco = (qtd_cachorro * preco_cachorro) + (qtd_bauru_s * preco_bauru_s) + (qtd_bauru_o * preco_bauru_o) + (qtd_hamburguer * preco_hamburguer) + (qtd_cheese * preco_cheese) + (qtd_refri * preco_refri)
+
+        if qtd_cachorro > 0:
+            print(f'| Cachorro Quente  | 100    | 1.20                |          {qtd_cachorro} |{qtd_cachorro * preco_cachorro:11.2f} |')
+        if qtd_bauru_s > 0:
+            print(f'| Bauru Simples    | 101    | 1.30                |          {qtd_bauru_s} |{qtd_bauru_s * preco_bauru_s:11.2f} |')
+        if qtd_bauru_o > 0:
+            print(f'| Bauru com Ovo    | 102    | 1.50                |          {qtd_bauru_o} |{qtd_bauru_o * preco_bauru_o:11.2f} |')
+        if qtd_hamburguer > 0:
+            print(f'| Hamburger        | 103    | 1.20                |          {qtd_hamburguer} |{qtd_hamburguer * preco_hamburguer:11.2f} |')
+        if qtd_cheese > 0:
+            print(f'| Cheeseburger     | 104    | 1.30                |          {qtd_cheese} |{qtd_cheese * preco_cheese:11.2f} |')
+        if qtd_refri > 0:
+            print(f'| Refrigerante     | 105    | 1.00                |          {qtd_refri} |{qtd_refri * preco_refri:11.2f} |')
+
+        print('|---------------------------------------------------------------------------|')
+        print(f'| Total Geral:                                    |         {total_qtd:2} |{total_preco:11.2f} |')
+        print('-----------------------------------------------------------------------------')
