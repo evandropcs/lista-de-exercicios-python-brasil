@@ -37,3 +37,30 @@ Faça um programa que mostre os n termos da Série a seguir:
 
 def imprimir_serie(n):
     """Escreva aqui em baixo a sua solução"""
+
+    soma = 0
+    numerador = range(1, n+1)
+    denominador = range(1, n*2, 2)
+
+    print(f'S = ', end='')
+
+    for num, den in zip(numerador, denominador):
+        soma += num/den
+        if num == n:
+            print(f'{num}/{den}')
+        else:
+            print(f'{num}/{den} + ', end='')
+    print(f'soma = {soma}')
+
+
+    # Solução do Renzo
+    # saida = 'S = '
+    #
+    # naturais_e_impares = zip(range(1, n + 1), range(1, 2 * (n + 1), 2))
+    # saida += ' + '.join(f'{numerador}/{denominador}' for numerador, denominador in naturais_e_impares)
+    #
+    # naturais_e_impares = zip(range(1, n + 1), range(1, 2 * (n + 1), 2))
+    # soma = sum(numerador/denominador for numerador, denominador in naturais_e_impares)
+    #
+    # print(saida)
+    # print(f'soma = {soma}')

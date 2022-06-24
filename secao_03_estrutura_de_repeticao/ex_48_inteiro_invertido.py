@@ -21,3 +21,15 @@ Exemplo:
 
 def inverter_inteiro(numero):
     """Escreva aqui em baixo a sua solução"""
+
+    lista = []
+    numero = str(numero)
+    for x in numero:
+        lista.append(x)
+
+    lista = ''.join(lista[::-1])
+    print(lista)
+
+    # Solução 1:
+    # numero = str(numero)
+    # print(numero[:: -1])

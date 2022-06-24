@@ -129,5 +129,13 @@ dmypy.json
 .pyre/
 
 .idea/
+<<<<<<< HEAD
+.vscode/
+
+=======
 
 .vscode/
+>>>>>>> origin/main
+
+
+

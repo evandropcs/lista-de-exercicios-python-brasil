@@ -46,6 +46,55 @@ Gabarito da Prova:
     Total de Alunos: 2
 """
 
-
 def corrigir(*provas):
     """Escreva aqui em baixo a sua solução"""
+
+    import statistics
+
+    gabarito = ['NOME', 'A', 'B', 'C', 'D', 'E', 'E', 'D', 'C', 'B', 'A']
+    notas = []
+
+    print('Aluno                 Nota')
+
+    for prova in provas:
+        nota = 0
+        aluno = prova[0]
+        i = 1
+        lista_pontos = []
+        for questao in prova[1:11]:
+            if questao == gabarito[i]:
+                nota += 1
+            i += 1
+        notas.append(nota)
+        print(f'{aluno}                 {nota}')
+
+    total = sum(notas)
+    media = statistics.mean(notas)
+    maior_nota = max(notas)
+    menor_nota = min(notas)
+    total_alunos = len(notas)
+
+    print('---------------------------')
+    print(f'Média geral: {media:.1f}')
+    print(f'Maior nota: {maior_nota}')
+    print(f'Menor nota: {menor_nota}')
+    print(f'Total de Alunos: {total_alunos}')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

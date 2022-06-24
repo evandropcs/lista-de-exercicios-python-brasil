@@ -90,3 +90,30 @@ from collections import Counter
 
 def apurar_votos(*votos):
     """Escreva aqui em baixo a sua solução"""
+
+    qtd_votos = 0
+    bolso = lula = dilma = fhc = nulos = brancos = 0
+
+    for x in votos:
+        qtd_votos += 1
+        if x == '1':
+            bolso += 1
+        elif x == '2':
+            lula += 1
+        elif x == '3':
+            dilma += 1
+        elif x == '4':
+            fhc += 1
+        elif x == '5':
+            nulos += 1
+        else:
+            brancos += 1
+
+    print("Código do Candidato Nome do Candidato Votos Porcentagem sobre total")
+    print(f"1                   Bostonaro         {bolso}{(bolso/qtd_votos)*100:10.1f}%")
+    print(f"2                   Luladrão          {lula}{(lula / qtd_votos) * 100:10.1f}%")
+    print(f"3                   Dilmanta          {dilma}{(dilma / qtd_votos) * 100:10.1f}%")
+    print(f"4                   FHC Isentão       {fhc}{(fhc / qtd_votos) * 100:10.1f}%")
+    print('-------------------------------------------------------------------')
+    print(f"5                   Votos Nulos       {nulos}{(nulos / qtd_votos) * 100:10.1f}%")
+    print(f"6                   Votos Brancos     {brancos}{(brancos / qtd_votos) * 100:10.1f}%")

@@ -52,3 +52,53 @@ Observando os termos no plural a colocação do "e", da vírgula entre outros. E
 
 def decompor_numero(numero: int):
     """Escreva aqui em baixo a sua solução"""
+    n = numero
+
+    cen, n = divmod(n, 100)
+    dez, und = divmod(n, 10)
+
+    str_und = 'unidade'; str_unds = 'unidades'; str_dez = 'dezena'; str_dezs = 'dezenas';
+    str_cen = 'centena'; str_cens = 'centenas'
+
+    if numero >= 1000:
+        print("'O número precisa ser menor que 1000'")
+    elif numero < 0:
+        print("'O número precisa ser positivo'")
+    elif cen > 1 and dez > 1 and und > 1:
+        print(f"'{numero} = {cen} {str_cens}, {dez} {str_dezs} e {und} {str_unds}'")
+    elif cen > 1 and dez > 1 and und == 0:
+        print(f"'{numero} = {cen} {str_cens} e {dez} {str_dezs}'")
+    elif cen > 1 and dez == 1 and und == 0:
+        print(f"'{numero} = {cen} {str_cens} e {dez} {str_dez}'")
+    elif cen > 1 and dez == 1 and und == 1:
+        print(f"'{numero} = {cen} {str_cens}, {dez} {str_dez} e {und} {str_und}'")
+    elif cen == 1 and dez == 1 and und == 1:
+        print(f"'{numero} = {cen} {str_cen}, {dez} {str_dez} e {und} {str_und}'")
+    elif cen == 1 and dez == 0 and und == 1:
+        print(f"'{numero} = {cen} {str_cen} e {und} {str_und}'")
+    elif cen > 1 and dez == 1 and und > 1:
+        print(f"'{numero} = {cen}{str_cens}{dez}{str_dez}{und}{str_unds}'")
+    elif cen > 1 and dez == 0 and und == 0:
+        print(f"'{numero} = {cen} {str_cens}'")
+    elif cen == 1 and dez == 0 and und == 0:
+        print(f"'{numero} = {cen} {str_cen}'")
+    elif cen > 1 and dez == 0 and und > 1:
+        print(f"'{numero} = {cen} {str_cens} e {und} {str_unds}'")
+    elif cen > 1 and dez == 0 and und == 1:
+        print(f"'{numero} = {cen} {str_cens} e {und} {str_und}'")
+    elif cen == 0 and dez > 1 and und > 1:
+        print(f"'{numero} = {dez} {str_dezs} e {und} {str_unds}'")
+    elif cen == 0 and dez > 1 and und == 1:
+        print(f"'{numero} = {dez} {str_dezs} e {und} {str_und}'")
+    elif cen == 0 and dez > 1 and und == 0:
+        print(f"'{numero} = {dez} {str_dezs}'")
+    elif cen == 0 and dez == 1 and und == 0:
+        print(f"'{numero} = {dez} {str_dez}'")
+    elif cen == 0 and dez == 1 and und > 1:
+        print(f"'{numero} = {dez} {str_dez} e {und} {str_unds}'")
+    elif cen == 0 and dez == 0 and und > 1:
+        print(f"'{numero} = {und} {str_unds}'")
+    elif cen == 0 and dez == 0 and und == 1:
+        print(f"'{numero} = {und} {str_und}'")
+
+
